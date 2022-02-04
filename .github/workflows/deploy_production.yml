@@ -10,3 +10,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: T
         run: echo ${GITHUB_REF#refs/*/}
+      - name: T2
+        run: echo ${GITHUB_REF_NAME}
